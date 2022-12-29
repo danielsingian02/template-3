@@ -1,0 +1,126 @@
+@font-face{
+  font-family: 'AirFactoryRounded';
+  src: url('../fonts/AirFactoryRounded.ttf');
+}
+
+.main-navigation a {
+    display: block;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+p.site-title{
+    display: none;
+}
+
+.main-navigation ul{
+    display: block;
+}
+
+.site-branding__burger{
+    float: right;
+}
+
+button.btn.btn-light{
+  display: block;
+  position: absolute;
+  right: 20px;
+  top:55px;
+}
+
+header{
+  width: 100%;
+  font-family: 'AirFactoryRounded', Serif;
+  font-size: 27px;
+  
+
+  & .site-icon{
+    height: auto;
+    max-width: 250px;
+  }
+
+  & .site-title{
+    margin: 0;
+    padding: 0;
+  }
+
+  & .site-branding{
+    padding: 20px;
+    background-color: rgb(194,25,25);
+  }
+
+  & nav{
+    border-top: 1px solid #CDCDCD;
+    border-bottom: 1px solid #CDCDCD;
+    width: 100%;
+
+    & ul, li{
+      margin: 0;
+    }
+
+    & ul {
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+      flex-wrap: wrap;
+      column-gap: 57px;
+      justify-content: center;
+    }
+
+    & li{
+      display: flex;
+      list-style-type: none;
+      border-color: transparent;
+
+
+      &.current_page_item > a {
+        border-bottom: 2px solid green;
+      }
+
+      & > a {
+        text-decoration: none;
+        padding: 1rem 0;
+        color: black;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .site-icon{
+    height: auto;
+    width: 150px;
+  }
+
+  button.btn.btn-light{
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 75px;
+  }
+}
+
+@media only screen and (max-width: 425px){
+  .site-icon{
+    height: auto;
+    width: 100px;
+  }
+
+  button.btn.btn-light{
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 75px;
+  }
+
+  .burger ul#primary-menu{
+    display: block;
+  }
+
+  .offcanvas-header{
+    padding-top: 50px;
+  }
+}
+
+
+

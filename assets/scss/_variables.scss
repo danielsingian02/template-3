@@ -1,0 +1,22 @@
+// Color Palette
+$green: #056E31;
+$light-grey: #CDCDCD;
+$grey: #C7C7C7;
+
+// Color Theme
+$primary-color: $green;
+
+// Mobile Responsive breakpoints
+$media_desktop      : "only screen and (max-width: 1200px)";
+$media_tablet       : "only screen and (max-width: 1024px)";
+$media_tablet_xs    : "only screen and (min-width: 991px)";
+$media_mobile       : "only screen and (max-width: 767px)";
+$media_mobile_sm    : "only screen and (max-width: 425px)";
+$media_mobile_xs    : "only screen and (max-width: 375px)";
+
+// Imports Air Factory Rounded Font
+@font-face {
+  font-family: 'AirFactoryRounded';
+  src: url("./assets/fonts/AirFactoryRounded.ttf");
+}
+

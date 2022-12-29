@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Montserrat:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Manrope:wght@600&display=swap');
+
+// INTRODUCTION //
+
+.intro{
+    display: flex;
+    padding: 0em 0em 10em 10em;
+}
+
+.intro__first-col{
+    width: 55%;
+    background-image: url("assets/images/bgmessage.png");
+    background-position:-10% 25%;
+    background-size: 400px 300px;
+    background-repeat: no-repeat;
+    padding-top:5em ;
+}
+
+.intro__head{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 65px;
+    font-weight: 600;
+    color:#C21919;
+}
+
+.intro__description{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.intro__second-col{
+    width: 45%;
+}
+
+.intro__button{
+    background-color: white; 
+    color: #C21919;
+    border: 2px solid #C21919;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.intro__image{
+    width: 714px;
+    height: 629px;
+}
+
+// end of INTRODUCTION //
+
+// MESSAGE SECTION //
+.message{
+    padding-bottom:5em;
+    background-image: url("assets/images/bgmessage.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10em;
+}
+
+.message__heading{
+    text-align: center;
+    color:black;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+}
+
+.message__closing-remarks{
+    text-align: center;
+    font-size: 15px;
+    color:black;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 22px;
+}
+// end of MESSAGE SECTION //
+
+// EVENTS SECTION //
+
+.events{
+    display: flex;
+    background: #C21919;
+    padding: 10em;
+}
+
+.events-col1{
+    width: 50%;
+}
+
+.events__list{
+    color:white;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 15px;
+}
+
+hr.events__line {
+    border-top: 1px solid red;
+    width: 80%;
+    float: right;
+}
+
+.events__latest-events{
+    color: white;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    text-align: right;
+}
+
+.events__description{
+    color: white;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    text-align: right;
+}
+
+.events-col2{
+    width: 50%;
+}
+// end of EVENTS SECTION//
+
+// CLOSING SECTION //
+.closing{
+    display:flex;
+    padding: 10em;
+}
+
+.closing__line{
+    border-top: 1px solid red;
+    width: 100%;
+    float: left;
+}
+
+.closing-col1{
+    width: 50%;
+    padding-right: 100px;
+}
+
+.closing__head{
+    font-family: 'Montserrat' , sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    color: black;
+}
+
+.closing__description{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    color: black;
+}
+
+.closing-col2{
+    width: 50%;
+    display: flex;
+}
+
+.closing-image{
+    margin-left: auto;
+    margin-right: auto;
+      @media (max-width: 768px){
+        width:100%;
+      }
+}
+// end of CLOSING SECTION //
+
+// --------------------------------------------------------------------------------------------------------//
+//                                          SCREEN SIZE FOR TABLET  (768px)                                //
+// --------------------------------------------------------------------------------------------------------//
+@media only screen and (max-width: 768px) {
+
+// ---------------------------------INTRODUCTION SECTION------------------------------ //
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+}
+.intro__first-col{
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2em;
+}
+
+.intro__second-col{
+    width: auto;
+    height: auto;
+    display: flex;
+}
+
+img.intro__image{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// ---------------------------------end of INTRODUCTION SECTION----------------------- //
+
+
+
+// ---------------------------------MESSAGE SECTION---------------------------------- //
+
+.message{
+    padding:5em;
+}
+
+// ---------------------------------end of MESSAGE SECTION--------------------------- //
+
+
+
+// ---------------------------------EVENTS SECTION----------------------------------- //
+
+.events{
+    padding: 5em;
+}
+
+// ---------------------------------end of EVENTS SECTION---------------------------- //
+
+
+
+// ---------------------------------CLOSING SECTION---------------------------------- //
+
+.closing{
+    padding: 5em 2em 5em 2em;
+}
+
+.closing-col1{
+    padding: 30px;
+}
+.closing-col2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.closing-image {
+    height: 300px;
+}
+
+// ---------------------------------end of CLOSING SECTION-------------------------- //
+}
+
+
+// -------------------------------------------------------------------------------------------------------- //
+/*                                         SCREEN SIZE FOR PHONE   (425px)                                  */
+// -------------------------------------------------------------------------------------------------------- //
+
+@media only screen and (max-width: 768px) {
+
+// ---------------------------------INTRODUCTION SECTION------------------------------ //
+
+.intro__head{
+    font-size: 40px;
+}
+
+.intro__first-col{
+    background-position: center;
+}
+
+img.intro__image {
+    height: 30%;
+    width: 100%;
+}
+
+// ---------------------------------end of INTRODUCTION SECTION----------------------- //
+
+
+
+// ---------------------------------MESSAGE SECTION-------------------------------- //
+
+.message__heading{
+    font-size: 30px;
+}
+
+.message{
+   padding: 2em;
+}
+
+// ---------------------------------end of MESSAGE SECTION------------------------- //
+
+
+
+// ---------------------------------EVENTS SECTION--------------------------------- //
+
+.events-col1{
+    width: 100%;
+}
+
+.events-col2{
+    width: 100%;
+}
+
+.events{
+    display: flex;
+    flex-direction: column;
+    padding:2em
+}
+
+.events__list{
+    text-align: center;
+}
+
+hr.events__line{
+    margin-right: auto;
+    margin-left: auto;
+    float: none;
+}
+
+.events__latest-events{
+    text-align: center;
+}
+
+.events__description{
+    text-align: center;
+}
+
+// ---------------------------------end of EVENTS SECTION------------------------- //
+
+
+
+// ---------------------------------CLOSING SECTION--------------------------------- //
+
+.closing{
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+
+}
+
+.closing__head{
+    text-align: center;
+}
+
+.closing-col1{
+    width: 100%;
+}
+
+.closing-col2{
+    width: 100%;
+}
+
+.closing__description{
+    text-align: center;
+}
+
+// ---------------------------------end of CLOSING SECTION------------------------- //
+}
