@@ -30,15 +30,17 @@
 			endif; ?>
 		</div><!-- .site-branding -->
 		<div class="footer-menu">
-		<nav id="site-navigation" class="footer-navigation">
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'footer-main-menu',
-				)
-			);
-			?>
+		<nav id="site-navigation" class="footer-main">
+			<div class="footer__navlistwrap">
+				<?php
+				wp_nav_menu(
+					array(
+						'theme_location' => 'menu-1',
+						'menu_id'        => 'footer-main-menu',
+					)
+				);
+				?>
+			</div>
 		</div>
 		</nav><!-- #site-navigation -->
 		<p class="footer__credits">© Copyright 2021 HOA Management Name Here</p>

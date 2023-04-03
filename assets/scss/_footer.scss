@@ -17,7 +17,7 @@ a{
     text-decoration: none;
 }
 
-ul#footer-main-menu {
+ul{
     border-color: transparent;
     display: flex;
     justify-content: center;
@@ -28,14 +28,18 @@ ul#footer-main-menu {
     padding: 0px;
 }
 
-.footer-navigation a{
+a {
+    color: black !important;
+}   
+
+.footer-navigation a {
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
     font-weight: 600;
     color: black;
 }
 
-.footer__credits{
+.footer__credits {
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
     font-weight:400;

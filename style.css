@@ -14,7 +14,7 @@
   background-position: -10% 25%;
   background-size: 400px 300px;
   background-repeat: no-repeat;
-  padding-top: 5em;
+  padding: 5em;
 }
 
 .intro__head {
@@ -46,7 +46,7 @@
 }
 
 .intro__image {
-  width: 714px;
+  width: 100%;
   height: 629px;
 }
 
@@ -56,6 +56,7 @@
   background-position: center;
   background-repeat: no-repeat;
   padding: 10em;
+  text-align: center;
 }
 
 .message__heading {
@@ -116,6 +117,8 @@ hr.events__line {
 
 .events-col2 {
   width: 50%;
+  display: flex;
+  flex-direction: column;
 }
 
 .closing {
@@ -519,6 +522,7 @@ hr.events__line {
   grid-template-rows: repeat(5, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+  width: 50%;
 }
 
 .comments__description {
@@ -644,9 +648,8 @@ hr.events__line {
 }
 
 hr.events__line {
-  border-top: 1px solid red;
+  border-top: 2px solid white;
   width: 80%;
-  float: right;
 }
 
 .events__latest-events {
@@ -667,6 +670,9 @@ hr.events__line {
 
 .events-col2 {
   width: 50%;
+  display: flex;
+  justify-content: end;
+  align-items: end;
 }
 
 .closing {
@@ -776,6 +782,11 @@ hr.events__line {
   }
   .events {
     padding: 5em;
+  }
+  .events-col2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .closing {
     padding: 5em 2em 5em 2em;
@@ -995,7 +1006,7 @@ a {
   text-decoration: none;
 }
 
-ul#footer-main-menu {
+ul {
   border-color: transparent;
   display: flex;
   justify-content: center;
@@ -1004,6 +1015,10 @@ ul#footer-main-menu {
   list-style: none;
   margin: 0px;
   padding: 0px;
+}
+
+a {
+  color: black !important;
 }
 
 .footer-navigation a {

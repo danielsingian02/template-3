@@ -255,6 +255,7 @@
     grid-template-rows: repeat(5, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+    width: 50%;
 }
   
 .comments__description { 
@@ -387,9 +388,8 @@
 }
 
 hr.events__line {
-    border-top: 1px solid red;
+    border-top: 2px solid white;
     width: 80%;
-    float: right;
 }
 
 .events__latest-events{
@@ -410,6 +410,9 @@ hr.events__line {
 
 .events-col2{
   width: 50%;
+  display: flex;
+  justify-content: end;
+  align-items: end;
 }
 // end of EVENTS SECTION//
 
@@ -566,8 +569,15 @@ hr.events__line {
 // ---------------------------------EVENTS SECTION----------------------------------- //
 
 .events{
-  padding: 5em;
+    padding: 5em;
 }
+
+.events-col2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 // ---------------------------------end of EVENTS SECTION---------------------------- //
 

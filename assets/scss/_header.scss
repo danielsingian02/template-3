@@ -9,52 +9,52 @@
     font-size: 15px;
 }
 
-p.site-title{
+p.site-title {
     display: none;
 }
 
-.main-navigation ul{
+.main-navigation ul {
     display: block;
 }
 
-.site-branding__burger{
+.site-branding__burger {
     float: right;
 }
 
-button.btn.btn-light{
+button.btn.btn-light {
   display: block;
   position: absolute;
   right: 20px;
   top:55px;
 }
 
-header{
+header {
   width: 100%;
   font-family: 'AirFactoryRounded', Serif;
   font-size: 27px;
   
 
-  & .site-icon{
+  & .site-icon {
     height: auto;
     max-width: 250px;
   }
 
-  & .site-title{
+  & .site-title {
     margin: 0;
     padding: 0;
   }
 
-  & .site-branding{
+  & .site-branding {
     padding: 20px;
     background-color: rgb(194,25,25);
   }
 
-  & nav{
+  & nav {
     border-top: 1px solid #CDCDCD;
     border-bottom: 1px solid #CDCDCD;
     width: 100%;
 
-    & ul, li{
+    & ul, li {
       margin: 0;
     }
 
@@ -67,11 +67,10 @@ header{
       justify-content: center;
     }
 
-    & li{
+    & li {
       display: flex;
       list-style-type: none;
       border-color: transparent;
-
 
       &.current_page_item > a {
         border-bottom: 2px solid green;
@@ -86,39 +85,39 @@ header{
   }
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px) {
   .site-icon{
-    height: auto;
-    width: 150px;
+      height: auto;
+      width: 150px;
   }
 
   button.btn.btn-light{
-    display: block;
-    position: absolute;
-    right: 20px;
-    top: 75px;
+      display: block;
+      position: absolute;
+      right: 20px;
+      top: 75px;
   }
 }
 
-@media only screen and (max-width: 425px){
+@media only screen and (max-width: 425px) {
   .site-icon{
-    height: auto;
-    width: 100px;
+      height: auto;
+      width: 100px;
   }
 
-  button.btn.btn-light{
-    display: block;
-    position: absolute;
-    right: 20px;
-    top: 75px;
+  button.btn.btn-light {
+      display: block;
+      position: absolute;
+      right: 20px;
+      top: 75px;
   }
 
   .burger ul#primary-menu{
-    display: block;
+      display: block;
   }
 
   .offcanvas-header{
-    padding-top: 50px;
+      padding-top: 50px;
   }
 }
 
